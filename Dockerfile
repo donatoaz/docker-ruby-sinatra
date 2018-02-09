@@ -1,15 +1,15 @@
 FROM ruby:2.3
 
-MAINTAINER Erika Pauwels <erika.pauwels@gmail.com>
+MAINTAINER Donato Azevedo <donatoaz@gmail.com>
 
-ENV RACK_ENV production
+ENV RACK_ENV development
 ENV MAIN_APP_FILE web.rb
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /app
 
 ADD startup.sh /
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 EXPOSE 80
 
